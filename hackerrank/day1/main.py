@@ -19,4 +19,4 @@ print (d+decimal)
 
 # Concatenate and print t9he String variables on a new line
 # The 's' variable above should be printed first.
-print(f'{s}{cadena_texto}')
+print(f'{s}{cadena_texto}') 
