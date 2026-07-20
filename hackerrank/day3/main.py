@@ -1,15 +1,5 @@
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-
-
 if __name__ == '__main__':
-    N = int(input().strip())
+    N = int(input('Diguite un numero entero: ').strip())
 
 '''
 tarea: Dado un numero entero n, realiza las siguientes acciones condicionales:
@@ -28,3 +18,4 @@ elif (N%2 == 0 and N >= 6 and N <= 20):
         print('Weird')
 elif (N%2 == 0 and N > 20):
     print('Not Weird')
+       
