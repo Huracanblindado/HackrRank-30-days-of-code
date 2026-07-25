@@ -1,0 +1,35 @@
+Objetivo
+Hoy aprenderemos sobre la estructura de datos Arreglo (Array). Consulta la pestaña Tutorial para ver el material de aprendizaje y un video instructivo.
+
+Tarea
+Dado un arreglo, A, de N enteros, imprime los elementos de A en orden inverso en una sola línea de números separados por espacios.
+
+Ejemplo
+A=[1,2,3,4]
+
+Imprime 4 3 2 1. Cada entero está separado por un espacio.
+
+Formato de entrada
+La primera línea contiene un entero, N (el tamaño de nuestro arreglo).
+La segunda línea contiene N enteros separados por espacios que describen los elementos del arreglo A.
+
+Restricciones
+
+1≤N≤1000
+
+1≤A[i]≤10000, donde A[i] es el i-ésimo entero en el arreglo.
+
+Formato de salida
+Imprime los elementos del arreglo A en orden inverso en una sola línea de números separados por espacios.
+
+Entrada de ejemplo
+
+Plaintext
+4
+1 4 3 2
+Salida de ejemplo
+
+Plaintext
+2 3 4 1
+Lenguaje
+Python 3
