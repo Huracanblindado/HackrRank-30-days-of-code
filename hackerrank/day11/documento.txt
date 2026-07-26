@@ -1,0 +1,105 @@
+Objetivo
+
+Hoy, continuaremos construyendo sobre nuestro conocimiento de arreglos (arrays) añadiendo otra dimensión. Consulta la pestaña Tutorial para ver materiales de aprendizaje y un video instructivo.
+
+Contexto
+
+Dado un arreglo 2D A de 6×6:
+
+1 1 1 0 0 0
+
+0 1 0 0 0 0
+
+1 1 1 0 0 0
+
+0 0 0 0 0 0
+
+0 0 0 0 0 0
+
+0 0 0 0 0 0
+
+Definimos un reloj de arena en A como un subconjunto de valores con índices que siguen este patrón en la representación gráfica de A:
+
+a b c
+
+d
+
+e f g
+
+Hay 16 relojes de arena en A, y la suma de un reloj de arena es la suma de los valores de ese reloj de arena.
+
+Tarea
+
+Calcula la suma de cada reloj de arena en A y luego imprime la suma máxima.
+
+Ejemplo
+
+En el arreglo mostrado arriba, la suma máxima de un reloj de arena es 7 para el reloj de arena en la esquina superior izquierda.
+
+Formato de entrada
+
+Hay 6 líneas de entrada, donde cada línea contiene 6 enteros separados por espacios que describen el arreglo 2D A.
+
+Restricciones
+
+−9≤A[i][j]≤9
+
+0≤i,j≤5
+
+Formato de salida
+
+Imprime la suma máxima de un reloj de arena en A.
+
+Entrada de muestra
+
+1 1 1 0 0 0
+
+0 1 0 0 0 0
+
+1 1 1 0 0 0
+
+0 0 2 4 4 0
+
+0 0 0 2 0 0
+
+0 0 1 2 4 0
+
+Salida de muestra
+
+19
+
+Explicación
+
+A contiene los siguientes relojes de arena:
+
+1 1 1   1 1 0   1 0 0   0 0 0
+
+1       0       0       0
+
+1 1 1   1 1 0   1 0 0   0 0 0
+
+0 1 0   1 0 0   0 0 0   0 0 0
+
+1       1       0       0
+
+0 0 2   0 2 4   2 4 4   4 4 0
+
+1 1 1   1 1 0   1 0 0   0 0 0
+
+0       2       4       4
+
+0 0 0   0 0 2   0 2 0   2 0 0
+
+0 0 2   0 2 4   2 4 4   4 4 0
+
+0       0       2       0
+
+0 0 1   0 1 2   1 2 4   2 4 0
+
+El reloj de arena con la suma máxima (19) es:
+
+2 4 4
+
+2
+
+1 2 4
