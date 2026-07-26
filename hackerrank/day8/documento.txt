@@ -1,0 +1,58 @@
+Objetivo
+Hoy aprenderemos sobre mapeos de pares clave-valor utilizando una estructura de datos Map o Dictionary (Diccionario). ¡Consulta la pestaña Tutorial para obtener materiales de aprendizaje y un video instructivo!
+
+Tarea
+Dadas n nombres y números de teléfono, arma una agenda telefónica que vincule los nombres de los amigos con sus respectivos números de teléfono. Luego, se te dará un número desconocido de nombres para consultar en tu agenda telefónica. Por cada nombre consultado, imprime la entrada asociada de tu agenda en una nueva línea con el formato nombre=numeroDeTelefono; si no se encuentra una entrada para el nombre, imprime Not found en su lugar.
+
+Nota: Tu agenda telefónica debe ser una estructura de datos tipo Dictionary, Map o HashMap.
+
+Formato de Entrada
+La primera línea contiene un entero, n, que denota el número de entradas en la agenda telefónica.
+Cada una de las n líneas subsecuentes describe una entrada en forma de 2 valores separados por un espacio en una sola línea. El primer valor es el nombre de un amigo y el segundo valor es un número de teléfono de 8 dígitos.
+Después de las n líneas de entradas de la agenda, hay un número desconocido de líneas de consultas. Cada línea (consulta) contiene un nombre para buscar, y debes continuar leyendo líneas hasta que no haya más entrada.
+
+Nota: Los nombres constan solo de letras alfabéticas en inglés minúsculas y son únicamente primeros nombres.
+
+Restricciones
+
+1≤n≤10 
+5
+ 
+
+1≤consultas≤10 
+5
+ 
+
+Formato de Salida
+En una nueva línea para cada consulta, imprime Not found si el nombre no tiene una entrada correspondiente en la agenda telefónica; de lo contrario, imprime el nombre completo y el numeroDeTelefono en el formato nombre=numeroDeTelefono.
+
+Entrada de Ejemplo
+
+Plaintext
+3
+sam 99912222
+tom 11122222
+harry 12299933
+sam
+edward
+harry
+Salida de Ejemplo
+
+Plaintext
+sam=99912222
+Not found
+harry=12299933
+Explicación
+Añadimos los siguientes n=3 pares (Clave, Valor) a nuestro mapa para que se vea así:
+phoneBook = {(sam, 99912222), (tom, 11122222), (harry, 12299933)}
+
+Luego procesamos cada consulta e imprimimos clave=valor si la clave consultada se encuentra en el mapa; de lo contrario, imprimimos Not found.
+
+Consulta 0: sam
+Sam es una de las claves en nuestro diccionario, por lo que imprimimos sam=99912222.
+
+Consulta 1: edward
+Edward no es una de las claves en nuestro diccionario, por lo que imprimimos Not found.
+
+Consulta 2: harry
+Harry es una de las claves en nuestro diccionario, por lo que imprimimos harry=12299933.
